@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Venturers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header style="background-color: #565356; color: #fff; padding: 20px; display: flex; align-items: center;">
+        <!-- Logo -->
+        <img src="logo.jpg" alt="Pune Venturers Logo" style="height: 140px; margin-right: 20px;">
+        <!-- Title -->
+        <h1 style="font-size: 48px; text-align: center; margin-left: 380px;">Pune Venturers</h1>
+        <a href="https://wa.me/919552170166" target="_blank" style="position: fixed; bottom: 20px; right: 20px; color: green; font-size: 5rem;">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          
+    </header>
+<!-- Menu Section -->
+<nav style="background-color: #333; padding: 10px; text-align: center;">
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+        <li style="margin-right: 20px;"><a href="about-us.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+        
+        <li style="margin-right: 20px;"><a href="gallery.html" style="color: #fff; text-decoration: none;">Gallery</a></li>
+        <li style="position: relative; margin-right: 20px;">
+            <span style="color: #fff; text-decoration: none; cursor: pointer;">Contact Us</span>
+            <div style="display: none; position: absolute; background-color: #444; color: #fff; padding: 10px; border-radius: 5px; top: 30px; right: -100%; white-space: nowrap; z-index: 999;">
+                Phone:+91 95521 70166<br>
+                Email:puneventurers@gmail.com
+            </div>
+        </li>
+    </ul>
+</nav>
+
+    
+<!-- Treks Section -->
+<section style="display: flex; justify-content: center; align-items: center; min-height: 100vh; flex-grow: 1; position: relative; margin-bottom: 50px;">
+    <!-- Slideshow Container -->
+    <div class="slideshow-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+        <div class="mySlides fade" style="height: 100vh;">
+            <img src="slideshow3.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="mySlides fade" style="height: 100vh;">
+            <img src="slideshow5.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="mySlides fade" style="height: 100vh;">
+            <img src="slideshow4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="mySlides fade" style="height: 100vh;">
+            <img src="slideshow1.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- Text Content -->
+    <div id="text-content" style="text-align: center; z-index: 1; position: relative;">
+        <h1 id="slide-heading" style="font-size: 24px; color: #fff;">Explore the Great Outdoors with Us!</h1>
+        <p id="slide-description" style="font-size: 18px; color: #fff;">Join us for exciting treks and adventures in and around Pune.</p>
+    </div>
+</section>
+
+    <!-- Treks Grid -->
+    <section>
+        <hr>
+        <h1 style="text-align: center; font-size: 40px;"><b>Treks Near Pune</b></h1>
+        <hr>
+        <div class="treks-container" style="display: flex; flex-direction: column; align-items: center;">
+            <!-- Trek 1: Raigad -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>01 Raigad</h2>
+                <img src="raigad.jpg" alt="Raigad Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Raigad trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 130 km</p>
+                    <p>Price: ₹1,200</p>
+                    <button><a href="raigad-details.html" class="read-more">Read More</a></button>
+                </div>
+            </div>
+
+            <!-- Trek 2: Rajmachi -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>02 Rajmachi</h2>
+                <img src="rajmachi.jpg" alt="Raigad Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Rajmachi trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 170 km</p>
+                    <p>Price: ₹900</p>
+                    <button><a href="rajmachi-details.html" class="read-more">Read More</a></button>
+                </div>
+            </div>
+
+            <!-- Trek 3: Kasubai -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>03 Kalsubai</h2>
+                <img src="kalsubai.jpg" alt="Kasubai Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Kasubai trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 172 km</p>
+                    <p>Price: ₹1,300</p>
+                    <button><a href="kalsubai-details.html">Read More</a></button>
+                </div>
+            </div>
+
+            <!-- Trek 4: Sinhagad -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>04 Sinhagad</h2>
+                <img src="sinhagad.jpeg" alt="Sinhagad Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Sinhagad trek</h2>
+                    <p>Difficulty Level: Easy</p>
+                    <p>Distance: 30km</p>
+                    <p>Price: ₹500</p>
+                    <button><a href="sinhagad-details.html">Read More</a></button>
+                </div>
+            </div>
+            <!-- Trek 5: Andharban -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>05 Andharban</h2>
+                <img src="andharban.jpg" alt="Andharban Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Andharban jungle trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 680km</p>
+                    <p>Price: ₹999</p>
+                    <button><a href="andharban-details.html">Read More</a></button>
+                </div>
+            </div>
+            <!-- Trek 6:lohagad -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>06 Lohagad</h2>
+                <img src="lohagad.jpg" alt="Kasubai Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Lohagad trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 68 km</p>
+                    <p>Price: ₹1200</p>
+                    <button><a href="lohagad-details.html">Read More</a></button>
+                </div>
+            </div>
+            <!-- Trek 7:Visapur -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>07 Visapur</h2>
+                <img src="visapur.jpeg" alt="Kasubai Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Visapur trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 61 km</p>
+                    <p>Price: ₹750</p>
+                    <button><a href="visapur-details.html">Read More</a></button>
+                </div>
+            </div>
+            <!-- Trek 8:Harishchandra gad -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>08 Harishchandragad</h2>
+                <img src="harishchandragad.jpg" alt="Kasubai Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Harishchandra gad trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 164 km</p>
+                    <p>Price: ₹1300</p>
+                    <button><a href="harishchandragad-details.html">Read More</a></button>
+                </div>
+            </div>
+            <!-- Trek 9:Korigad -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>09 Korigad</h2>
+                <img src="korigad.JPG" alt="Kasubai Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Korigad trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 127km</p>
+                    <p>Price: ₹1,000</p>
+                    <button><a href="korigad-details.html">Read More</a></button>
+                </div>
+            </div>
+            <!-- Trek 10:Ratangad -->
+            <div class="trek-card" style="width: 80%; margin-bottom: 20px;">
+                <h2>10 Ratangad</h2>
+                <img src="ratangad.jpg" alt="Kasubai Trek" style="width: 100%; height: 70vh; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h2>Ratangad trek</h2>
+                    <p>Difficulty Level: Moderate</p>
+                    <p>Distance: 1152 km</p>
+                    <p>Price: ₹1,500</p>
+                    <button><a href="ratangad-details.html">Read More</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Array of text content for each slide
+        const slideText = [
+            {
+                heading: "Explore the Great Outdoors with Us!",
+                description: "Join us for exciting treks and adventures in and around Pune."
+            },
+            {
+                heading: "Mountain Trekking Awaits!",
+                description: "Join us for a thrilling mountain trekking experience in Pune."
+            },
+            {
+                heading: "Camping Under the Stars!",
+                description: "Experience the magic of camping amidst nature."
+            },
+            {
+                heading: "Adventure Sports Fun!",
+                description: "Engage in adventure sports and make unforgettable memories."
+            }
+        ];
+    
+        let slideIndex = 0;
+    
+        // Function to change the text and slideshow
+        function showSlides() {
+            // Get all the slides and text content
+            const slides = document.getElementsByClassName("mySlides");
+            const heading = document.getElementById("slide-heading");
+            const description = document.getElementById("slide-description");
+    
+            // Reset all slides to not display
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+    
+            // Show the current slide
+            slides[slideIndex].style.display = "block";
+    
+            // Change text content for the current slide
+            heading.textContent = slideText[slideIndex].heading;
+            description.textContent = slideText[slideIndex].description;
+    
+            // Increment slideIndex and reset it if it exceeds the number of slides
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+    
+            // Set a timeout to change the slide every 5 seconds (5000ms)
+            setTimeout(showSlides, 5000);
+        }
+    
+        // Initialize the slideshow and text change
+        showSlides();
+    </script>
+
+    <!--// Tooltip for Contact Us-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const contactItem = document.querySelector('nav ul li span');
+    const tooltip = contactItem.nextElementSibling;
+
+    contactItem.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    contactItem.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+
+    tooltip.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    tooltip.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+});
+</script>
+
+</body>
+</html>

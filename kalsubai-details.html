@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kalsubai Trek</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header style="background-color: #565356; color: #fff; padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+        <!-- Logo aligned left -->
+        <img src="logo.jpg" alt="Pune Venturers Logo" style="height: 100px;">
+    
+        <!-- Title centered -->
+        <h1 style="font-size: 48px; flex-grow: 1; text-align: center; margin: 0;">Pune Venturers</h1>
+    
+        <!-- Spacer to balance the layout -->
+        <div style="width: 100px;"></div>
+    </header>
+    <!-- Menu Section -->
+    <nav style="background-color: #333; padding: 10px; text-align: center;">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
+            <li style="margin-right: 20px;"><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+            <li style="margin-right: 20px;"><a href="about-us.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+           
+            <li style="margin-right: 20px;"><a href="gallery.html" style="color: #fff; text-decoration: none;">Gallery</a></li>
+            <li style="position: relative; margin-right: 20px;">
+                <span style="color: #fff; text-decoration: none; cursor: pointer;">Contact Us</span>
+                <div style="display: none; position: absolute; background-color: #444; color: #fff; padding: 10px; border-radius: 5px; top: 30px; right: -100%; white-space: nowrap; z-index: 999;">
+                    Phone:+91 95521 70166<br>
+                    Email:puneventurers@gmail.com
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <br><br>
+    
+    <div style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; margin: 40px;">
+        <!-- Left Column: Video and caption -->
+        <div style="flex: 1;">
+            <!-- Video Embed -->
+            <div style="position: relative; width: 100%; padding-bottom: 75%; height: 0; overflow: hidden;">
+                <iframe 
+                    src="https://drive.google.com/file/d/1my5hkIk_-3oE2C-lPeL0r0NXKIJXSqRU/preview"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                    allow="autoplay">
+                </iframe>
+            </div>
+    
+            <!-- Text Below the Video -->
+            <p style="margin-top: 15px; font-style: italic; color: #444;">
+                Take a virtual tour of the Kalsubai Peak – from scenic trails to historic landmarks.
+            </p>
+        </div>
+    
+            
+    
+        <!-- Info -->
+        <div style="flex: 1; max-width: 600px;">
+            <h1>"Kalsubai: The Summit of Adventure"</h1>
+            <hr>
+            <h2>Trek Details</h2>
+            <p><b>Difficulty Level:</b> Moderate</p>
+            <p><b>Distance:</b> 172 km</p>
+            <p><b>Price:</b> ₹1,300</p>
+            
+            <h2>About Kalsubai Peak</h2>
+           
+            <p>Conquer the highest peak in Maharashtra, Kalsubai, and witness breathtaking views of the Sahyadri mountain range. Experience the thrill of trekking through rugged terrain and enjoy the scenic beauty of the surrounding landscape.
+            </p>
+            <ul>
+                <li>Discover the Magic of Kalsubai Peak</li>
+
+                <li>Panoramic Views: Marvel at the stunning views from the summit</li>
+                <li>Adventure: Experience the thrill of trekking and adventure activities</li>
+                <li>Scenic Beauty: Witness the natural beauty of the Sahyadri mountains</li>
+            <p>Get Ready for an Unforgettable Experience!!!!</p>
+
+            <p>Join us on an adventure to Kalsubai and create memories that will last a lifetime!</p>
+        </ul>     
+        </div>
+    </div>
+    <!-- Tooltip for Contact Us-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const contactItem = document.querySelector('nav ul li span');
+    const tooltip = contactItem.nextElementSibling;
+
+    contactItem.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    contactItem.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+
+    tooltip.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    tooltip.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+});
+</script>
+</body>
+</html>

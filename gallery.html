@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pune Venturers</title>
+<style>
+/* Add CSS styles here */
+.collage-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+justify-items: center;
+margin: 0 auto;
+width: 80%;
+margin-top: 50px; /* Added margin-top to create gap */
+}
+
+.collage-image {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.margin-bottom {
+margin-bottom: 50px;
+text-align: center; /* Added text-align: center */
+}
+</style>
+<style>
+    
+        /* Add CSS styles here */
+        header h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .contact-us {
+            position: relative;
+        }
+        
+        .contact-us .contact-info {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .contact-us:hover .contact-info {
+            display: block;
+        }
+</style>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    .slider-container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+        min-width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .nav-buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .nav-buttons button {
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+<!-- Header Section -->
+<header style="background-color: #565356; color: #fff; padding: 20px; display: flex; align-items: center;">
+    <!-- Logo -->
+    <img src="logo.jpg" alt="Pune Venturers Logo" style="height: 140px; margin-right: 20px;">
+    <!-- Title -->
+    <h1 style="font-size: 48px; text-align: center; margin-left: 380px;">Pune Venturers</h1>
+</header>
+<!-- Menu Section -->
+<nav style="background-color: #333; padding: 10px; text-align: center;">
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
+<li style="margin-right: 20px;"><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+<li style="margin-right: 20px;"><a href="about-us.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+
+<li style="margin-right: 20px;"><a href="gallery.html" style="color: #fff; text-decoration: none;">Gallery</a></li>
+<li style="position: relative; margin-right: 20px;">
+    <span style="color: #fff; text-decoration: none; cursor: pointer;">Contact Us</span>
+    <div style="display: none; position: absolute; background-color: #444; color: #fff; padding: 10px; border-radius: 5px; top: 30px; right: -100%; white-space: nowrap; z-index: 999;">
+        Phone:+91 95521 70166<br>
+        Email:puneventurers@gmail.com
+    </div>
+</li>
+</ul>
+</nav>
+
+
+<div class="collage-container">
+<img src="slideshow1.jpg" alt="Image 1" class="collage-image">
+<img src="slideshow2.jpg" alt="Image 2" class="collage-image">
+<img src="slideshow3.jpg" alt="Image 3" class="collage-image">
+<img src="slideshow4.jpg" alt="Image 4" class="collage-image">
+<img src="slideshow5.jpeg" alt="Image 2" class="collage-image">
+<img src="slideshow6.jpeg" alt="Image 3" class="collage-image">
+<img src="slideshow7.jpeg" alt="Image 1" class="collage-image">
+<img src="ourpictures3.jpg" alt="Image 2" class="collage-image">
+<img src="andharban.jpg" alt="Image 3" class="collage-image">
+</div>
+<h1 class="margin-bottom">Explore the Great Outdoors with Us!</h1>
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide" style="background-image: url('ourpictures1.jpg');"></div>
+        <div class="slide" style="background-image: url('ourpictures2.jpg');"></div>
+        <div class="slide" style="background-image: url('ourpictures3.jpg');"></div>
+    </div>
+    <div class="nav-buttons">
+        <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</div>
+
+<script>
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    let index = 0;
+
+    function updateSlide() {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        updateSlide();
+    });
+
+    prevBtn.addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        updateSlide();
+    });
+
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        updateSlide();
+    }, 5000);
+</script>
+<!--// Tooltip for Contact Us-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const contactItem = document.querySelector('nav ul li span');
+    const tooltip = contactItem.nextElementSibling;
+
+    contactItem.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    contactItem.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+
+    tooltip.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    tooltip.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+});
+</script>
+
+
+
+</body>
+</html>

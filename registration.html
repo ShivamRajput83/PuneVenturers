@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS styles here */
+        header h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .contact-us {
+            position: relative;
+        }
+        
+        .contact-us .contact-info {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .contact-us:hover .contact-info {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header style="background-color: #565356; color: #fff; padding: 20px; display: flex; align-items: center;">
+        <!-- Logo -->
+        <img src="logo.jpg" alt="Pune Venturers Logo" style="height: 140px; margin-right: 20px;">
+        <!-- Title -->
+        <h1 style="font-size: 48px; text-align: center; margin-left: 380px;">Pune Venturers</h1>
+    </header>
+    <!-- Menu Section -->
+    <nav>
+        <ul>
+            <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
+            <li style="margin-right: 20px;"><a href="about-us.html">About Us</a></li>
+            <li style="margin-right: 20px;"><a href="registration.html">Registration</a></li>
+            <li style="margin-right: 20px;"><a href="gallery.html">Gallery</a></li>
+            <li class="contact-us">
+                <a href="contact-us.html">Contact Us</a>
+                <div class="contact-info">
+                    Mobile: +91 12345 67890<br>
+                    Email: <a href="mailto:info@puneventurers.com" style="color: #fff;">info@puneventurers.com</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Registration Content -->
+    <section>
+        <h1>Register</h1>
+
+    </section>
+    
+</body>
+</html>

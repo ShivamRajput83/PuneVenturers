@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pune Venturers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS styles here */
+        header h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 36px;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .contact-us {
+            position: relative;
+        }
+        
+        .contact-us .contact-info {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .contact-us:hover .contact-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header style="background-color: #565356; color: #fff; padding: 20px; display: flex; align-items: center;">
+        <!-- Logo -->
+        <img src="logo.jpg" alt="Pune Venturers Logo" style="height: 140px; margin-right: 20px;">
+        <!-- Title -->
+        <h1 style="font-size: 48px; text-align: center; margin-left: 380px;">Pune Venturers</h1>
+    </header>
+    <!-- Menu Section -->
+    <nav style="background-color: #333; padding: 10px; text-align: center;">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-around;">
+            <li style="margin-right: 20px;"><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+            <li style="margin-right: 20px;"><a href="about-us.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+           
+            <li style="margin-right: 20px;"><a href="gallery.html" style="color: #fff; text-decoration: none;">Gallery</a></li>
+            <li style="position: relative; margin-right: 20px;">
+                <span style="color: #fff; text-decoration: none; cursor: pointer;">Contact Us</span>
+                <div style="display: none; position: absolute; background-color: #444; color: #fff; padding: 10px; border-radius: 5px; top: 30px; right: -100%; white-space: nowrap; z-index: 999;">
+                    Phone:+91 95521 70166<br>
+                    Email:puneventurers@gmail.com
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- About Us Content -->
+    <section>
+        <h1>About Us</h1>
+        <p>Welcome to Pune Venturers! We are a team of adventure enthusiasts dedicated to providing exciting trekking experiences in and around Pune.</p>
+        <p>
+            Pune Venturers is a non-profit organization and volunteering club dedicated to promoting adventure and outdoor activities in Pune and beyond. With a rich history spanning over four decades, we have been instrumental in fostering a sense of community and camaraderie among adventure enthusiasts since 1980.
+            <p><b>Our Mission</b></p>
+           <p> Our mission is to provide a platform for like-minded individuals to come together, share their passion for adventure, and contribute to the betterment of society. We strive to create opportunities for personal growth, skill development, and environmental awareness through our various initiatives.</p>
+            <p><b>Our Values</b></p>
+            <p>Community: We believe in building strong relationships and fostering a sense of belonging among our members.<br>
+            Adventure: We are passionate about exploring new horizons and pushing boundaries.<br>
+            Sustainability: We strive to minimize our impact on the environment and promote eco-friendly practices.<br>
+            Inclusivity: We welcome individuals from all walks of life and believe in creating opportunities for everyone to participate.</p>
+            <p><b>Our Journey</b></p>
+            <p>Since our inception in 1980, we have organized numerous treks, camps, and outdoor activities that have brought people together and created lifelong memories. Our dedicated team of volunteers has worked tirelessly to promote adventure and community service, and we continue to grow and evolve as an organization.</p>
+            <p><b>Join Us</b></p>
+            <p>If you share our passion for adventure and community service, we invite you to join us on this exciting journey. Together, let's explore new horizons, build meaningful relationships, and make a positive impact on our community!</p>
+    </section>
+    <!--// Tooltip for Contact Us-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const contactItem = document.querySelector('nav ul li span');
+    const tooltip = contactItem.nextElementSibling;
+
+    contactItem.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    contactItem.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+
+    tooltip.addEventListener('mouseenter', () => {
+        tooltip.style.display = 'block';
+    });
+
+    tooltip.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+    });
+});
+</script>
+</body>
+</html>
